@@ -22,20 +22,16 @@ public class OOPSBannerApp {
     // Use an enhanced for loop to print the banner for better modularity.
     public static void main(String[] args) {
         
-        // 1. Array Creation: Create an empty String array to hold the 7 banner lines
-        String[] bannerLines = new String[7];
-
-        // 2. Array Population: Populate each index using String.join()
-        bannerLines[0] = String.join(" ", "   ***   " , "   ***   " , " ******* " , "  ****** ");
-        bannerLines[1] = String.join(" ", " **   ** " , " **   ** " , "**     **" , "**       ");
-        bannerLines[2] = String.join(" ", "**     **" , "**     **" , "**     **" , "**       ");
-        bannerLines[3] = String.join(" ", "**     **" , "**     **" , "******** " , "  ****** ");
-        bannerLines[4] = String.join(" ", "**     **" , "**     **" , "**       " , "       **");
-        bannerLines[5] = String.join(" ", " **   ** " , " **   ** " , "**       " , "**     **");
-        bannerLines[6] = String.join(" ", "   ***   " , "   ***   " , "**       " , "  ****** ");
+        String[] lines = { String.join(" ", "   ***   " , "   ***   " , " ******* " , "  ****** "),
+                        String.join(" ", " **   ** " , " **   ** " , "**     **" , "**       "),
+                        String.join(" ", "**     **" , "**     **" , "**     **" , "**       "),
+                        String.join(" ", "**     **" , "**     **" , "******** " , "  ****** "),
+                        String.join(" ", "**     **" , "**     **" , "**       " , "       **"),
+                        String.join(" ", " **   ** " , " **   ** " , "**       " , "**     **"),
+                        String.join(" ", "   ***   " , "   ***   " , "**       " , "  ****** ")};
 
         // 3. Loop Iteration: Use an enhanced for-each loop to print each line sequentially
-        for (String line : bannerLines) {
+        for (String line : lines) {
             System.out.println(line);
         }
     }
