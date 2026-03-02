@@ -1,3 +1,14 @@
+/**
+ * OOPSBannerApp UC7 - Store Character Pattern in a Class
+ *
+ * This use case extends UC6 by implementing a CharacterPatternMap class to encapsulate
+ * character-to-pattern mappings. The application retrieves and displays the "OOPS"
+ * banner using these mappings. This approach enhances code organization and modularity.
+ *
+ * @author Developer
+ * @version 7.0
+ */
+
 public class OOPSBannerApp {
 
     // Inner Static Class to hold character and its pattern
